@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*---------------------------------*/
+
+:root {
+    --firaSans: 'Fira Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: var(--firaSans);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #1F1D42;
+    background-color: #f8eae1;
+}
+
+/*--------------Phone--------------*/
+
+.card-hover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-hover__link {
+    opacity: 1;
+
+}
+
+.card-hover__content {
+    width: 100%;
+    text-align: center;
+    background-color: #b98b71;
+    padding: 0 70px 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card-hover__content::before,
+.card-hover__content::after {
+    content: '';
+    width: 100%;
+    height: 120px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.card-hover__content::before {
+    top: -80px;
+    clip-path: ellipse(60% 80px at bottom center);
+}
+
+.card-hover__content::after {
+    bottom: -80px;
+    clip-path: ellipse(60% 80px at top center);
+}
+
+.card-hover__title {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+span {
+    color: #7f0b0b;
+}
+
+.card-hover__text {
+    font-size: 0.75rem;
+}
+
+.card-hover__link {
+    text-decoration: none;
+    color: #7f0b0b;
+    padding: 10px;
+    bottom: 1rem;
+
+    /* position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    color: #7f0b0b;
+    padding: 10px; */
+}
+
+svg {
+    width: 18px;
+    margin-left: 4px;
+    transition: transform 0.3s;
+}
+
+.card-hover__extra {
+    opacity: 0;
+}
+
+img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+
+
+/*---------------------------------*/
+
+@media screen and (min-width: 600px) {
+    .card-hover {
+        width: 360px;
+        height: 500px;
+        box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-hover:hover .card-hover__content {
+        background-color: #e8d4c2;
+        bottom: 100%;
+        transform: translateY(100%);
+        padding: 50px 60px;
+        transition: all 0.35s cubic-bezier(.1, .72, .4, .97);
+    }
+
+    .card-hover:hover .card-hover__link {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        transition: all 0.3s 0.35s cubic-bezier(.1, .72, .4, .97);
+    }
+
+    .card-hover__content {
+        text-align: center;
+        padding: 0 60px 50px;
+        transform: translateY(0);
+        transition: all 0.35s 0.35s cubic-bezier(.1, .72, .4, .97);
+        will-change: bottom, background-color, transform, padding;
+    }
+
+    .card-hover__link {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.35s;
+    }
+
+    .card-hover__link:hover svg {
+        transform: translateX(4px);
+    }
+
+    .card-hover__extra {
+        height: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: #b97171;
+        padding: 80px;
+        bottom: 0;
+        z-index: 0;
+        color: #e8d2c2;
+        transform: translateY(100%);
+        will-change: transform;
+        transition: transform 0.35s;
+    }
+
+
+    /*----?----I don't know why it doesn't work----?----*/
+    .card-hover__link:hover .card-hover__extra {
+        transform: translateY(0);
+        transition: transform 0.35s;
+    }
+    /*------------------------*/
+
+
+    .card-hover img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+        transition: 0.35s 0.35s transform cubic-bezier(.1, .72, .4, .97);
+    }
+
+    .card-hover:hover img {
+        transform: scale(1);
+        transition: 0.35s 0.1s transform cubic-bezier(.1, .72, .4, .97);
+    }
+}

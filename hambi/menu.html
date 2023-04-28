@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="script" href="menu.js">
+    <link rel="stylesheet" href="menu.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"> BurgerBite </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">Discount</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#drinks" class="nav__link">Drinks</a>
+                    </li>
+                    <a href="#" class="button button--ghost">Support</a>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <img src="https://assets.codepen.io/7773162/nav-img.png" alt="" class="nav__img">
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- HOME -->
+        <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SLIDER 1 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="menuIMG/1.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">BurgerBite</h4>
+                                    <span class="home__details-subtitle">With homemade sauce</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="pumpkin__subtitle">#1 Top popular beef hamburger 2022</h3>
+                                <h1 class="home__title">DOUBLE <br> BEEF!! <br>  </h1>
+                                <p class="home__description">beef patty, parmesan chips, 
+                                    grilled shiitake mushroom, umami ketchup, grilled tomato 
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="#" class="book__now">
+                                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%282%29_2.svg"
+                                            alt="" />
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SLIDER 2 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="menuIMG/3.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">BurgerBite</h4>
+                                    <span class="home__details-subtitle">From domestic chicken</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 Top popular chicken hamburger 2022</h3>
+                                <h1 class="home__title">SIMPLE<br> CHICKEN <br>  </h1>
+                                <p class="home__description">chicken patty, mayonnaise, 
+                                    romaine lettuce, tomato, pickles, red onion 
+                                </p>
+                                <div class="home__buttons">
+                                    <a href="#" class="book--now">
+                                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%282%29_2.svg"
+                                            alt="" />
+                                    </a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SLIDER 3 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="menuIMG/4.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">BurgerBite</h4>
+                                    <span class="home__details-subtitle">Natural mushroom</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#3 Top popular hamburger 2022</h3>
+                                <h1 class="home__title">MUSHROOM  <br> BACON <br>  </h1>
+                                <p class="home__description">mushroom, beef patty, grilled bacon, baconnaise, 
+                                    red onion, romaine lettuce, pickles </p>
+                                <div class="home__buttons">
+                                    <a href="#" class="book--now">
+                                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%282%29_2.svg"
+                                            alt="" />
+                                    </a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+         <!-- DISCOUNT -->
+         <section class="section discount" id="discount">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title">25% Discount <br> 2 servings of sweet potatoes </h2>
+                    <a href="#" class="book--now">
+                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%282%29_2.svg" alt="" />
+                    </a>
+                </div>
+                <img src="menuIMG/21.png" alt="" class="discount__img">
+            </div>
+        </section>
+        <!-- NEW ARRIVALS -->
+        <section class="section new" id="new">
+            <h2 class="section__title">New Arrivals</h2>
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">
+                                <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_2.svg" alt="" />
+                            </div>
+                            <img src="menuIMG/6.png" alt="" class="new__img">
+                            <h3 class="new__title">Vegan mushroom burger</h3>
+                            <span class="new__subtitle">mushroom, onion, crispy, avocado, tomato</span>
+                            <div class="new__prices">
+                                <span class="new__price">$14.99</span>
+                                <span class="new__discount">$29.99</span>
+                            </div>
+                            <button class="button new__button">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">
+                                <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_2.svg" alt="" />
+                            </div>
+                            <img src="menuIMG/7.png" alt="" class="new__img">
+                            <h3 class="new__title">Vegan green burger</h3>
+                            <span class="new__subtitle">onion, salad, special green sauce</span>
+                            <div class="new__prices">
+                                <span class="new__price">$11.99</span>
+                                <span class="new__discount">$21.99</span>
+                            </div>
+                            <button class="button new__button">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">
+                                <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_2.svg" alt="" />
+                            </div>
+                            <img src="menuIMG/8.png" alt="" class="new__img">
+                            <h3 class="new__title">Vegan hawaiian burger</h3>
+                            <span class="new__subtitle">red bean patties, tangy barbecue sauce, juicy pineapple</span>
+                            <div class="new__prices">
+                                <span class="new__price">$4.99</span>
+                                <span class="new__discount">$9.99</span>
+                            </div>
+                            <button class="button new__button">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">
+                                <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_2.svg" alt="" />
+                            </div>
+                            <img src="menuIMG/31.png" alt="" class="new__img">
+                            <h3 class="new__title">Pulled pork burger</h3>
+                            <span class="new__subtitle">pork shoulder, cheddar cheese, pickles, coleslaw, fresh leek rings</span>
+                            <div class="new__prices">
+                                <span class="new__price">$24.99</span>
+                                <span class="new__discount">$44.99</span>
+                            </div>
+                            <button class="button new__button">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">
+                                <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_2.svg" alt="" />
+                            </div>
+                            <img src="menuIMG/32.png" alt="" class="new__img">
+                            <h3 class="new__title">Fried egg burger</h3>
+                            <span class="new__subtitle">beef, fried egg, Dijon mustard, tomato, salad, cheddar cheese</span>
+                            <div class="new__prices">
+                                <span class="new__price">$5.99</span>
+                                <span class="new__discount">$12.99</span>
+                            </div>
+                            <button class="button new__button">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">
+                                <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_2.svg" alt="" />
+                            </div>
+                            <img src="menuIMG/33.png" alt="" class="new__img">
+                            <h3 class="new__title">Big tower burger</h3>
+                            <span class="new__subtitle">beef patty, parmesan chips, 
+                                grilled shiitake mushroom, umami ketchup, grilled tomato</span>
+                            <div class="new__prices">
+                                <span class="new__price">$7.99</span>
+                                <span class="new__discount">$14.99</span>
+                            </div>
+                            <button class="button new__button">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CATEGORY -->
+        <section class="section category">
+            <h2 class="section__title">Favorite <br> Category </h2>
+            <div class="category__container container grid">
+                <div class="category__data">
+                    <img src="menuIMG/2.png" alt="" class="category__img">
+                    <h3 class="category__title">PREMIUM CHEESE BURGER</h3>
+                    <p class="category__description">beef patty, red and white cheddar, grilled-marinated spring onion, korean mayonnaise, caramelised onion</p>
+                </div>
+                <div class="category__data">
+                    <img src="menuIMG/5.png" alt="" class="category__img">
+                    <h3 class="category__title">MEXICANA BURGER</h3>
+                    <p class="category__description">beef patty, cheddar chees, bean puree, mole sauce, guacamole, jalapeno, romaine lettuce</p>
+                </div>
+                <div class="category__data">
+                    <img src="menuIMG/10.png" alt="" class="category__img">
+                    <h3 class="category__title">BANANA BURGER</h3>
+                    <p class="category__description">beef patty, blueberry jam, grilled bacon, banana, peanut butter.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section class="section about" id="drinks">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">Refreshing <br> Drinks </h2>
+                    <p class="about__description">Fruit juices are natural drinks that contain little or no additives. 
+                        Citrus juices, such as orange juice is one of the most popular breakfast drinks. 
+                        Grapefruit juice, pineapple, apple, grape, lime and lemon juices are also very popular. 
+                    </p>
+                    <a href="#" class="book--now">
+                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%282%29_2.svg" alt="" />
+                    </a>
+                </div>
+                <img src="menuIMG/11.png" alt="" class="about__img">
+            </div>
+        </section>
+        <!-- Drinks -->
+        <section class="section trick" >
+            <h2 class="section__title">Drinks</h2>
+            <div class="trick__container container grid">
+                <div class="trick__content">
+                    <img src="menuIMG/12.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Orange juice</h3>
+                    <span class="trick__subtitle">0.5</span>
+                    <span class="trick__price">$11.99</span>
+                    <button class="button trick__button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="trick__content">
+                    <img src="menuIMG/13.png" alt="" class="trick__img">
+                    <h3 class="trick__title">pomegranate juice</h3>
+                    <span class="trick__subtitle">0.5</span>
+                    <span class="trick__price">$8.99</span>
+                    <button class="button trick__button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="trick__content">
+                    <img src="menuIMG/14.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Lime juice</h3>
+                    <span class="trick__subtitle">0.5</span>
+                    <span class="trick__price">$15.99</span>
+                    <button class="button trick__button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="trick__content">
+                    <img src="menuIMG/15.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Kiwi juice</h3>
+                    <span class="trick__subtitle">0.5</span>
+                    <span class="trick__price">$7.99</span>
+                    <button class="button trick__button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="trick__content">
+                    <img src="menuIMG/16.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Coffee</h3>
+                    <span class="trick__subtitle">0.5</span>
+                    <span class="trick__price">$19.99</span>
+                    <button class="button trick__button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+                <div class="trick__content">
+                    <img src="menuIMG/17.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Beer</h3>
+                    <span class="trick__subtitle">0.5</span>
+                    <span class="trick__price">$17.99</span>
+                    <button class="button trick__button">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+       
+       
+        <!-- OUR NEWSLETTER -->
+        <section class="section newsletter">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Our Newsletter</h2>
+                <p class="newsletter__description"> Promotion new products and sales. Directly to your inbox </p>
+                <form action="" class="newsletter__form">
+                    <input type="text" placeholder="Enter your email" class="newsletter__input">
+                    <a href="#" class="book--now">
+                        <img src="https://assets.codepen.io/7773162/svgviewer-output+%282%29_2.svg" alt="" />
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">  
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+</body>
+
+<script src="menu.js"></script>
+
+</html>
